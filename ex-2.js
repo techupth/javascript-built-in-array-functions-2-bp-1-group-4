@@ -374,5 +374,10 @@ const bills = [
 ];
 
 // Start coding here
-
-const newBills;
+function checkMemberNull(array){
+  if(array.member!==null){
+    return array
+  }
+}
+const newBills=bills.filter(checkMemberNull);
+console.log(newBills);
